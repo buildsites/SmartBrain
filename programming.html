@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Stars - Programming Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\css\bootstrap.min.css">
+
+    <!-- fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Merriweather&family=Montez&family=Montserrat:wght@400;700&family=Open+Sans&family=Pacifico&family=Sacramento&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <!-- fonts awesome -->
+    <script src="https://kit.fontawesome.com/8b55461bea.js" crossorigin="anonymous"></script>
+    <!-- offline -->
+    <link rel="stylesheet"
+        href="C:\Users\Nelson\Documents\Web development\Udemy Project\fontawesome-free-6.1.2-web\css\all.min.css">
+    <script src="C:\Users\Nelson\Documents\Web development\Udemy Project\fontawesome-free-6.1.2-web\js\all.js"></script>
+
+    <style>
+        .nav-link:hover {
+            color: gold
+        }
+
+        .navigation {
+            padding: 0 10px;
+        }
+    </style>
+
+</head>
+
+
+<body class="body">
+
+    <!-- navigation bar -->
+
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top navigation" id="navbar-top">
+        <div class="container-fluid">
+            <a class="navbar-brand brand-name" href="#" style="font-size:25px;">GameStars <i class="star">&#9734</i></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Brain Teasers</a>
+                    </li>
+                    <li class="nav-item brain">
+                        <a class="nav-link text-secondary" href="#">Programming Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Academic Quiz</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="createQuiz.html">Create Quiz</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Offcanvas Sidebar -->
+    <div class="offcanvas offcanvas-start custom-offcanvas bg-secondary" id="demo">
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title brand">GameStars <i class="star">&#9734</i></h1>
+            <a type="button" class="btn-close text-reset close-offcanvas" data-bs-dismiss="offcanvas"></a>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav lists">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Brain Teasers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Programming Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Academic Quiz</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- display questions -->
+    <div class="display-question" id="top">
+        <div class="question-count">
+            <a>Question </a><a class="count">1</a>
+        </div>
+        <div class="question-container">
+            <p class="question-texts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deleniti
+                reiciendis ut suscipit at, esse eum nam ratione illum deserunt.</p>
+        </div>
+
+    </div>
+
+    <!-- options -->
+    <div class="display-options">
+        <div class="d-grid gap-3">
+            <div class="row">
+                <button type="button" class="btn btn-outline-secondary btn-block opt-one col-md-6"
+                    onclick="firstButton()">Option one </button>
+                <button type="button" class="btn btn-outline-secondary btn-block opt-two  col-md-6"
+                    onclick="secondButton()">Option two</button>
+            </div>
+            <div class="row">
+                <button type="button" class="btn btn-outline-secondary btn-block opt-three  col-md-6"
+                    onclick="thirdButton()">Option three</button>
+                <button type="button" class="btn btn-outline-secondary btn-block opt-four  col-md-6"
+                    onclick="fourthButton()">Option four</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- navigating question -->
+
+    <div class="navigate-question  justify-content-center">
+        <div class="row">
+            <div class="previous-question-btn col-sm-6">
+                <a class="btn btn-large btn-secondary" onclick="previousQuestion()" href="#top"><i
+                        class="fa-solid fa-circle-chevron-left previous-question"></i>Previous</a>
+            </div>
+            <div class="next-question-btn col-sm-6">
+                <a class="btn btn-large btn-secondary" onclick="nextQuestion()" href="#top">Next<i
+                        class="fa-solid fa-circle-chevron-right next-question"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom">
+        <ul class="pagination pagination-md justify-content-center" style="margin:0; ">
+
+            <li class="page-item" onclick="questionOnePage()"><a class="page-link text-secondary" href="#">1</a></li>
+            <li class="page-item" onclick="questionTwoPage()"><a class="page-link text-secondary" href="#">2</a></li>
+            <li class="page-item" onclick="questionThreePage()"><a class="page-link text-secondary" href="#">3</a></li>
+            <li class="page-item" onclick="questionFourPage()"><a class="page-link text-secondary" href="#">4</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">5</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">6</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">7</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">8</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">9</a></li>
+            <li class="page-item"><a class="page-link text-secondary" href="#">10</a></li>
+
+        </ul>
+
+
+    </div>
+
+
+
+
+
+    <!-- scripts -->
+
+    <script
+        src="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\js\bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+    <script src="programmingQuiz.js"></script>
+</body>
+
+</html>

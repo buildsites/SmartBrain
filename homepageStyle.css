@@ -1,0 +1,126 @@
+.body {
+    font-family: "Montserrat";
+    background-color: rgba(247, 243, 243, 0.945);
+}
+
+.brand-name {
+    font-size: 20px;
+    font-family: "ubuntu";
+}
+
+.star {
+    color: gold;
+    font-weight: bolder;
+}
+
+.nav-item {
+    padding: 5px 10px;
+}
+
+
+
+.brand,
+.lists,
+.close-offcanvas {
+    color: white;
+}
+
+.brand {
+    font-family: "ubuntu";
+    
+}
+.carousel-slide{
+    padding-bottom:63px;
+}
+.customise-carousel-item {
+    color: white;
+    padding: 20px 50px;
+
+}
+
+.heading-one {
+    padding: 30px;
+    font-size: 3.0rem;
+    font-weight: bolder;
+    color:white;
+}
+
+.gold-gs {
+    font-family:"ubuntu";
+    color: goldenrod;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1px;
+    left: 45px;
+    animation-name: gold-gs;
+    animation-duration: 1.5s;
+    -webkit-animation-name: gold-gs;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.gold-gs:hover {
+    color: rgb(63, 63, 63);
+}
+
+@keyframes gold-gs {
+    0% {
+        font-size: 3.0rem;
+    }
+
+
+    100% {
+        font-size: 3.5rem;
+    }
+}
+
+.phone-img, .iphone-img{
+        
+        left: 700px;
+        top: 50px;
+        
+        position: absolute;
+}
+
+.phone-img{
+rotate: 20deg;
+}
+
+@media screen and (max-width:835px){
+    .body{
+        text-align:center;
+    }
+    .phone-img{
+        position:relative;
+        left: 0;
+        top:80px;
+        rotate:5deg;
+        margin:auto;
+        
+    }
+
+    .iphone-img{
+        visibility:hidden;
+    }
+    .gold-gs{
+        position: relative;
+            bottom:0;
+            left: 0;
+            animation-name:null ;
+                animation-duration: 1.5s;
+                -webkit-animation-name: null;
+                -webkit-animation-duration: 1.5s;
+                animation-iteration-count: infinite;
+    }
+}
+
+/* slide two */
+#custom-button{
+    font-weight:bolder;
+    font-size:25px;
+   
+}
+
+.iphone-img{
+    rotate:-20deg;
+}
