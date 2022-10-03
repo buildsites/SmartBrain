@@ -181,7 +181,7 @@ function questionEleven() {
     document.querySelector(".try-again").textContent = "Try agian";
     document.querySelector(".next-level").textContent = "Next Level";
     document.querySelector(".try-again").setAttribute("href", "index.html");
-    document.querySelector(".custom-pagination-class").style.display = "none";
+    document.querySelectorAll(".custom-pagination-class").style.display = "none";
 
   if (score <= 4) {
     document.querySelector(".score-image-lost").style.display ="inline";
