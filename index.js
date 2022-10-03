@@ -174,27 +174,25 @@ function questionTen() {
 
 function questionEleven() {
   if (question === 11) {
-    document.querySelector("p").textContent = score + "/10" ;
+    document.querySelector("p").textContent = score + "/10";
     document.querySelector(".display-options").style.display = "none";
     document.querySelector(".count").textContent = "score sheet";
     document.querySelector(".question-container").style.padding = "15px";
     document.querySelector(".try-again").textContent = "Try agian";
     document.querySelector(".next-level").textContent = "Next Level";
     document.querySelector(".try-again").setAttribute("href", "index.html");
-    document.querySelectorAll(".custom-pagination-class").style.display = "none";
+    document.querySelector(".custom-pagination-class").style.display =
+      "none";
 
-  if (score <= 4) {
-    document.querySelector(".score-image-lost").style.display ="inline";
-    document.querySelector(".question-container").style.display = "inline";
-  } else if (score > 4 && score <= 7) {
-    document.querySelector(".score-image-tried").style.display = "inline";
-  } else if (score > 7 && score <= 10){
-    document.querySelector(".score-image-smile").style.display = "inline";
-    document.querySelector(".next-level").setAttribute("href", "programming.html");
-
-  } else{
-
-  }
+    if (score <= 4) {
+      document.querySelector(".score-image-lost").style.display = "block";
+    } else if (score > 4 && score <= 7) {
+      document.querySelector(".score-image-tried").style.display = "block";
+    } else if (score > 7 && score <= 10) {
+      document.querySelector(".score-image-smile").style.display = "block";
+      document.querySelector(".next-level").setAttribute("href", "programming.html");
+    } else {
+    }
   }
 }
 
