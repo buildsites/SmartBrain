@@ -168,22 +168,27 @@
 
 
 
-
-
-
-/* @keyframes button {
-    0% {
-        y :0;
-    }
-
-
-    100% {
-        y :100px;
-    }
-} */
-
-
-
 .iphone-img {
     rotate: -20deg;
-}
+
+    /* small screen  */
+
+    @media screen and (max-width: 885px) {
+            .nav-item {
+                padding: 5px 5px;
+                font-size: 15px;
+            }
+        }
+    
+        @media screen and (max-width: 782px) {
+            .nav-item {
+                padding: 5px 0;
+                font-size: 15px;
+                text-align: center;
+            }
+
+                        @media screen and (max-width: 580px) {
+                            .heading-one {
+                                font-weight: bold;
+                                font-size: 1.2rem;
+                            }
