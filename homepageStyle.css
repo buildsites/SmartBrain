@@ -153,12 +153,12 @@
 
 .button:hover {
     color: rgb(83, 82, 82);
-    background:#5f666b;
-    background-image: -webkit-linear-gradient(top,#5f666b, #7d7f85);
-    background-image: -moz-linear-gradient(top,#5f666b, #7d7f85);
-    background-image: -ms-linear-gradient(top,#5f666b, #7d7f85);
-    background-image: -o-linear-gradient(top,#5f666b, #7d7f85);
-    background-image: linear-gradient(to bottom,#5f666b, #7d7f85);
+    background: #5f666b;
+    background-image: -webkit-linear-gradient(top, #5f666b, #7d7f85);
+    background-image: -moz-linear-gradient(top, #5f666b, #7d7f85);
+    background-image: -ms-linear-gradient(top, #5f666b, #7d7f85);
+    background-image: -o-linear-gradient(top, #5f666b, #7d7f85);
+    background-image: linear-gradient(to bottom, #5f666b, #7d7f85);
     text-decoration: none;
     -webkit-box-shadow: 0 8px 2px #666666;
     -moz-box-shadow: 0 8px 2px #666666;
@@ -170,25 +170,28 @@
 
 .iphone-img {
     rotate: -20deg;
+}
 
-    /* small screen  */
+/* small screen  */
 
-    @media screen and (max-width: 885px) {
-            .nav-item {
-                padding: 5px 5px;
-                font-size: 15px;
-            }
-        }
-    
-        @media screen and (max-width: 782px) {
-            .nav-item {
-                padding: 5px 0;
-                font-size: 15px;
-                text-align: center;
-            }
+@media screen and (max-width: 885px) {
+    .nav-item {
+        padding: 5px 5px;
+        font-size: 15px;
+    }
+}
 
-                        @media screen and (max-width: 580px) {
-                            .heading-one {
-                                font-weight: bold;
-                                font-size: 1.2rem;
-                            }
+@media screen and (max-width: 782px) {
+    .nav-item {
+        padding: 5px 0;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .heading-one {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
