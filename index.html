@@ -112,7 +112,11 @@
         <div class="question-count">
             <a>Question </a><a class="count">1</a>
         </div>
+       
         <div class="question-container">
+            <div class="justify-content-center">
+            <img src="smile.png" class="score-image-smile"/>
+            <img src="tried.png" class="score-image-tried" /><img src="lost.png" class="score-image-lost"/></div>
             <p class="question-texts"></p>
         </div>
 
@@ -142,11 +146,11 @@
     <div class="navigate-question  justify-content-center">
         <div class="row">
             <div class="previous-question-btn col-sm-6">
-                <a class="btn btn-large btn-secondary" onclick="previousQuestion()" href="#"><i
+                <a class="btn btn-large btn-secondary try-again" onclick="previousQuestion()" href="#"><i
                         class="fa-solid fa-circle-chevron-left previous-question"></i>Previous</a>
             </div>
             <div class="next-question-btn col-sm-6">
-                <a class="btn btn-large btn-secondary" onclick="nextQuestion()" href="#">Next<i
+                <a class="btn btn-large btn-secondary next-level" onclick="nextQuestion()" href="#">Next<i
                         class="fa-solid fa-circle-chevron-right next-question"></i></a>
             </div>
 
@@ -154,7 +158,7 @@
     </div>
 
     <!-- using pagination to navigate question -->
-    <div class="bottom">
+    <div class="bottom custom-pagination-class">
         <ul class="pagination pagination-md justify-content-center" style="margin:0; ">
 
             <li class="page-item " onclick="questionOnePage()"><a class="page-link  questionOnePage" href="#">1</a></li>

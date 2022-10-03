@@ -16,6 +16,7 @@ function questions() {
   questionEight();
   questionNine();
   questionTen();
+  questionEleven();
 }
 
 function questionOne() {
@@ -30,7 +31,6 @@ function questionOne() {
     document.querySelector(".count").textContent = 1;
 
     answer = document.getElementsByTagName("button")[0];
-	
   }
 }
 
@@ -169,6 +169,32 @@ function questionTen() {
     document.querySelector(".count").textContent = 10;
 
     answer = document.getElementsByTagName("button")[0];
+  }
+}
+
+function questionEleven() {
+  if (question === 11) {
+    document.querySelector("p").textContent = score + "/10" ;
+    document.querySelector(".display-options").style.display = "none";
+    document.querySelector(".count").textContent = "score sheet";
+    document.querySelector(".question-container").style.padding = "15px";
+    document.querySelector(".try-again").textContent = "Try agian";
+    document.querySelector(".next-level").textContent = "Next Level";
+    document.querySelector(".try-again").setAttribute("href", "index.html");
+    document.querySelector(".custom-pagination-class").style.display = "none";
+
+  if (score <= 4) {
+    document.querySelector(".score-image-lost").style.display ="inline";
+    document.querySelector(".question-container").style.display = "inline";
+  } else if (score > 4 && score <= 7) {
+    document.querySelector(".score-image-tried").style.display = "inline";
+  } else if (score > 7 && score <= 10){
+    document.querySelector(".score-image-smile").style.display = "inline";
+    document.querySelector(".next-level").setAttribute("href", "programming.html");
+
+  } else{
+
+  }
   }
 }
 

@@ -8,8 +8,8 @@
     font-family: "ubuntu";
 }
 
-.brand-name:hover{
-    color:rgb(63, 63, 63);
+.brand-name:hover {
+    color: rgb(63, 63, 63);
 }
 
 .star {
@@ -31,11 +31,13 @@
 
 .brand {
     font-family: "ubuntu";
-    
+
 }
-.carousel-slide{
-    padding-bottom:63px;
+
+.carousel-slide {
+    padding-bottom: 63px;
 }
+
 .customise-carousel-item {
     color: white;
     padding: 20px 50px;
@@ -46,11 +48,11 @@
     padding: 30px;
     font-size: 3.0rem;
     font-weight: bolder;
-    color:white;
+    color: white;
 }
 
 .gold-gs {
-    font-family:"ubuntu";
+    font-family: "ubuntu";
     color: goldenrod;
     text-decoration: none;
     position: absolute;
@@ -78,43 +80,46 @@
     }
 }
 
-.phone-img, .iphone-img{
-        
-        left: 700px;
-        top: 50px;
-        
-        position: absolute;
+.phone-img,
+.iphone-img {
+
+    left: 700px;
+    top: 50px;
+
+    position: absolute;
 }
 
-.phone-img{
-rotate: 20deg;
+.phone-img {
+    rotate: 20deg;
 }
 
-@media screen and (max-width:835px){
-    .body{
-        text-align:center;
-    }
-    .phone-img{
-        position:relative;
-        left: 0;
-        top:80px;
-        rotate:5deg;
-        margin:auto;
-        
+@media screen and (max-width:835px) {
+    .body {
+        text-align: center;
     }
 
-    .iphone-img{
-        visibility:hidden;
-    }
-    .gold-gs{
+    .phone-img {
         position: relative;
-            bottom:0;
-            left: 0;
-            animation-name:null ;
-                animation-duration: 1.5s;
-                -webkit-animation-name: null;
-                -webkit-animation-duration: 1.5s;
-                animation-iteration-count: infinite;
+        left: 0;
+        top: 80px;
+        rotate: 5deg;
+        margin: auto;
+
+    }
+
+    .iphone-img {
+        visibility: hidden;
+    }
+
+    .gold-gs {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        animation-name: null;
+        animation-duration: 1.5s;
+        -webkit-animation-name: null;
+        -webkit-animation-duration: 1.5s;
+        animation-iteration-count: infinite;
     }
 }
 
@@ -133,29 +138,52 @@ rotate: 20deg;
     -webkit-box-shadow: 0px 12px 0px #666666;
     -moz-box-shadow: 0px 12px 0px #666666;
     box-shadow: 0px 12px 0px #666666;
-    font-family: Arial;
+    font-family: "ubuntu";
     color: #ffffff;
     font-size: 25px;
     padding: 15px 30px 15px 30px;
     text-decoration: none;
-    border-style:none;
+    border-style: none;
+    animation-name: button;
+    animation-duration: 1.5s;
+    -webkit-animation-name: button;
+    -webkit-animation-duration: 1.5s;
+    animation-iteration-count: infinite;
 }
 
 .button:hover {
-    background: #697278;
-    background-image: -webkit-linear-gradient(top, #697278, #020a0f);
-    background-image: -moz-linear-gradient(top, #697278, #020a0f);
-    background-image: -ms-linear-gradient(top, #697278, #020a0f);
-    background-image: -o-linear-gradient(top, #697278, #020a0f);
-    background-image: linear-gradient(to bottom, #697278, #020a0f);
+    color: rgb(63, 63, 63);
+    background:#5f666b;
+    background-image: -webkit-linear-gradient(top,#5f666b, #7d7f85);
+    background-image: -moz-linear-gradient(top,#5f666b, #7d7f85);
+    background-image: -ms-linear-gradient(top,#5f666b, #7d7f85);
+    background-image: -o-linear-gradient(top,#5f666b, #7d7f85);
+    background-image: linear-gradient(to bottom,#5f666b, #7d7f85);
     text-decoration: none;
-    -webkit-box-shadow: 0;
-        -moz-box-shadow:0;
-        box-shadow: 0;
+    -webkit-box-shadow: 0 8px 2px #666666;
+    -moz-box-shadow: 0 8px 2px #666666;
+    box-shadow: 0 8px 2px #666666;
+    transform: translateY(8px);
 }
-   
-   
 
-.iphone-img{
-    rotate:-20deg;
+
+
+
+
+
+/* @keyframes button {
+    0% {
+        y :0;
+    }
+
+
+    100% {
+        y :100px;
+    }
+} */
+
+
+
+.iphone-img {
+    rotate: -20deg;
 }

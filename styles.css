@@ -10,7 +10,8 @@ font-family: 'Ubuntu', sans-serif; */
 
 .body {
   font-family: "Montserrat";
-  background-color: rgba(247, 243, 243, 0.945);
+  /* background-color: rgba(247, 243, 243, 0.945); */
+  background-color: #f7f2f3;
 }
 
 /* navigation menu*/
@@ -46,6 +47,12 @@ font-family: 'Ubuntu', sans-serif; */
 .count {
   text-decoration: none;
   color: grey;
+}
+
+.score-image-smile, .score-image-tried, .score-image-lost{
+  width:250px;
+  display:none;
+  margin:auto;
 }
 
 .question-texts {
