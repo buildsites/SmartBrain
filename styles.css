@@ -139,8 +139,15 @@ font-family: 'Ubuntu', sans-serif; */
 
   .previous-question-btn {
     text-align: left;
-    position: absolute;
+    position: relative;
+    bottom:-38px;
+    /* background-color:blueviolet; */
   }
+
+    .next-level {
+      text-align: right;
+      position: relative;
+    } 
 }
 
 @media screen and (max-width: 885px) {
