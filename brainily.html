@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="homepageStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
-    <link rel="stylesheet"
-        href="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\css\bootstrap.min.css" />
-
+        <link rel="stylesheet" href="bootstrap.min.css">
     <!-- fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Merriweather&family=Montez&family=Montserrat:wght@400;700&family=Open+Sans&family=Pacifico&family=Sacramento&family=Ubuntu:wght@700&display=swap"
@@ -33,8 +31,9 @@
             color: gold;
         }
 
-        .brand-name:hover{
-            color:rgb(63, 63, 63);
+        .nav-item{
+            text-align: left;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -42,9 +41,8 @@
 <body class="body">
     <nav class="navbar navbar-expand-sm custom bg-secondary navbar-dark navigation" id="navbar-top">
         <div class="container-fluid">
-            <a class="navbar-brand brand-name" href="GameStars.html" style="font-size:25px; margin-left:40px">GameStars <i
-                    class="star">&#9734</i></a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <a class="navbar-brand brand-name" href="brainily.html" style="font-size:25px; margin-left:40px"><img src="brainily-logo.png" alt="" class="logo" style="width:150px"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-content">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
@@ -68,60 +66,64 @@
 
 
     <!-- Offcanvas Sidebar -->
-    <div class="offcanvas offcanvas-start custom-offcanvas bg-secondary" id="demo">
+    <div class="offcanvas offcanvas-start custom-offcanvas bg-secondary" id="offcanvas-content">
         <div class="offcanvas-header">
-            <h1 class="offcanvas-title brand">GameStars <i class="star">&#9734</i></h1>
-            <a type="button" class="btn-close text-reset close-offcanvas" data-bs-dismiss="offcanvas"></a>
+            <img src="brainily-logo.png" alt="" class="logo offcanvas-title" style="width:200px">
+            
+            <a type="button" class="btn-close text-reset close-offcanvas" data-bs-dismiss="offcanvas" style="background-color: white;"></a>
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav lists">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Brain Teasers</a>
+                    <a class="nav-link" href="index.html">Brain Teasers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Programming Quiz</a>
+                    <a class="nav-link" href="programming.html">Programming Quiz</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Academic Quiz</a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="createQuiz.html">Create Quiz</a>
+                </li>
+    
             </ul>
         </div>
     </div>
 
     <!-- everything concerning the carousel slide -->
-    <div id="carouselId" class="carousel slide  bg-secondary carousel-slide" data-ride="false">
+    <!-- <div id="carouselId" class="carousel slide bg-secondary  carousel-slide" data-ride="false" style="height:70vh">
         <ol class="carousel-indicators">
             <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="First slide"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="1" aria-label="Second slide"></li>
             <li data-bs-target="#carouselId" data-bs-slide-to="2" aria-label="Third slide"></li>
         </ol>
-        <div class="carousel-inner" role="listbox">
+        <div class="carousel-inner" role="listbox"> -->
 
             <!-- first slide content -->
-            <div class="carousel-item active customise-carousel-item ">
+            <!-- <div class="carousel-item active customise-carousel-item ">
                 <div class="row">
                     <h1 class=" col-md-6 heading-one">Learn, play and boost your Brain Capacity with rich quizes from <a
-                            class="gold-gs" href="index.html">GameStars!</a></h1>
+                            class="gold-gs" href="index.html">Brainily!</a></h1>
                     <img src="iphone.png" class="col-md-6 phone-img " style="width:250px;" />
                 </div>
-            </div>
+            </div> -->
 
 
 
             <!-- second slide contents -->
 
-            <div class="carousel-item customise-carousel-item">
+            <!-- <div class="carousel-item customise-carousel-item">
                 <div class="row">
                     <h1 class=" col-md-6 heading-one">How good are you with Brain Teasers? <br><a href="index.html"><button id="custom-button"
                             class="button" >Test Now!</button></a></h1>
-                            <!-- <marquee behavior="altername" direction="right">ggg</marquee> -->
-                    <img src="iphone.png" class="col-md-6 phone-img" style="width:250px;" />
+                             <marquee behavior="altername" direction="right">ggg</marquee> -->
+                    <!-- <img src="iphone.png" class="col-md-6 phone-img" style="width:250px;" />
                     <img src="iphone.png" class=" iphone-img" style="width:250px;" />
                 </div>
 
-            </div>
+            </div> 
             <div class="carousel-item customise-carousel-item">
                 <div class="row">
                     <h1 class=" col-md-6 heading-one">Brace up your skill in any programming language </h1>
@@ -137,7 +139,7 @@
 <button class="carousel-control-next justify-content-end " type="button" data-bs-target="#carouselId" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-</button>
+</button> -->
 
 
 
@@ -150,7 +152,7 @@
 
 
             <script
-                src="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\js\bootstrap.min.js"></script>
+                src="bootstrap.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
                 integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
                 crossorigin="anonymous"></script>

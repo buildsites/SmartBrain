@@ -1,213 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Stars - Brain Teasers</title>
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brainily - Brain Teasers</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" id="style" href="css/lighttheme.css" />
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\css\bootstrap.min.css">
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
 
     <!-- fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Merriweather&family=Montez&family=Montserrat:wght@400;700&family=Open+Sans&family=Pacifico&family=Sacramento&family=Ubuntu:wght@700&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
+      href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Indie+Flower&family=Merriweather&family=Montez&family=Montserrat:wght@400;700&family=Open+Sans&family=Pacifico&family=Sacramento&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- fonts awesome -->
     <script src="https://kit.fontawesome.com/8b55461bea.js" crossorigin="anonymous"></script>
     <!-- offline -->
     <link rel="stylesheet"
-        href="C:\Users\Nelson\Documents\Web development\Udemy Project\fontawesome-free-6.1.2-web\css\all.min.css">
+      href="C:\Users\Nelson\Documents\Web development\Udemy Project\fontawesome-free-6.1.2-web\css\all.min.css" />
     <script src="C:\Users\Nelson\Documents\Web development\Udemy Project\fontawesome-free-6.1.2-web\js\all.js"></script>
 
     <style>
-        .nav-link:hover {
-            color: gold
-        }
+      .nav-item {
+        text-align: left;
+        font-size: 20px;
+      }
 
-        .navigation {
-            padding: 0 10px;
-        }
+      .nav-link:hover {
+        color: gold;
+      }
 
-        .page-link {
-            color: #6c757d
-        }
+      .navigation {
+        padding: 0 10px;
+      }
+    </style>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-        .page-link:hover {
-            background-color: #6c757d;
-            color: white;
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
         }
-
-        
+      }
     </style>
 
-</head>
-<!--  -->
+    <style>
+      /* Prevent scroll on narrow devices */
+      html,
+      body {
+        overflow-x: hidden;
+      }
 
-<body class="body">
+      body {
+        padding-top: 56px;
+      }
 
-    <!-- navigation bar -->
+      @media (max-width: 991.98px) {
+        .offcanvas-collapse {
+          position: fixed;
+          top: 76px;
+          /* Height of navbar */
+          bottom: 0;
+          left: 100%;
+          width: 100%;
+          padding-right: 1rem;
+          padding-left: 1rem;
+          overflow-y: auto;
+          visibility: hidden;
+          background-color: #212529;
+          transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        }
 
-    <nav class="navbar navbar-expand-sm custom bg-secondary navbar-dark fixed-top navigation" id="navbar-top">
-        <div class="container-fluid">
-            <a class="navbar-brand brand-name" href="GameStars.html" style="font-size:25px;">GameStars <i
-                    class="star">&#9734</i></a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end " id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item brain">
-                        <a class="nav-link text-secondary m-0" href="index.html">Brain Teasers</a>
-                    </li>
-                    <li class="nav-item code">
-                        <a class="nav-link " href="programming.html">Programming Quiz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Academic Quiz</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="createQuiz.html">Create Quiz</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+        .offcanvas-collapse.open {
+          visibility: visible;
+          transform: translateX(-100%);
+        }
+      }
 
-    <!-- Offcanvas Sidebar -->
-    <div class="offcanvas offcanvas-start custom-offcanvas bg-secondary" id="demo">
-        <div class="offcanvas-header">
-            <h1 class="offcanvas-title brand">GameStars <i class="star">&#9734</i></h1>
-            <a type="button" class="btn-close text-reset close-offcanvas" data-bs-dismiss="offcanvas"></a>
-        </div>
-        <div class="offcanvas-body">
-            <ul class="navbar-nav lists">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Brain Teasers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Programming Quiz</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Academic Quiz</a>
-                </li>
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
 
-            </ul>
-        </div>
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .nav-underline .nav-link {
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        font-size: 0.875rem;
+        color: #6c757d;
+      }
+
+      .text-white-50 {
+        color: rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <!--  -->
+
+  <body class="body">
+    <div class="colorpallete">
+      <div class="themecolor dark" onclick="darkTheme()"></div>
+      <div class="themecolor light" onclick="lightTheme()"></div>
+      <div class="themecolor neon" onclick="goldTheme()"></div>
     </div>
 
-
+    <!-- navigation bar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand brand-name" href="brainily.html"><img src="images/brainily-logo.png" alt=""
+            class="logo" /></a>
+        <button class="myHamburger p-0 border-0" type="button" data-toggle="offcanvas">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse justify-content-end" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-0" href="index.html">Brain Teasers</a>
+            </li>
+            <li class="nav-item code">
+              <a class="nav-link" href="programming.html">Programming Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Academic Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="createQuiz.html">Create Quiz</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- display questions -->
-    <div class="display-question" id="top">
-        <div class="question-count">
-            <a>Question </a><a class="count">1</a>
-        </div>
-       
-        <div class="question-container">
-            <div class="justify-content-center">
-            <img src="smile.png" class="score-image-smile"/>
-            <img src="tried.png" class="score-image-tried" /><img src="lost.png" class="score-image-lost"/></div>
-            <p class="question-texts"></p>
-        </div>
 
+    <!-- Modal Body -->
+    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+    <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title hint-question" id="modalTitleId">
+              Modal title
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body hint-text">Body</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Facebook</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+      const myModal = new bootstrap.Modal(
+        document.getElementById("modalId"),
+        options
+      );
+    </script>
+
+    <div class="display-question" id="top">
+      <div class="question-count">
+        <a>Question </a><a class="count">1</a>
+        <!-- Modal trigger button -->
+        <button type="button" class="hint btn btn-lg" data-bs-toggle="modal" data-bs-target="#modalId">
+          &#128161;
+        </button>
+      </div>
+
+      <div class="question-container">
+        <div class="justify-content-center">
+          <img src="images/smile.png" class="score-image-smile" />
+          <img src="images/tried.png" class="score-image-tried" />
+          <img src="images/lost.png" class="score-image-lost" />
+        </div>
+        <p class="question-texts"></p>
+      </div>
     </div>
 
     <!-- options -->
-    <div class="display-options">
-        <div class="d-grid gap-3">
-            <div class="row">
-                <button type="button" class="btn btn-outline-secondary btn-block opt-one col-md-6"
-                    onclick="firstButton()">Option one </button>
-                <button type="button" class="btn btn-outline-secondary btn-block opt-two  col-md-6"
-                    onclick="secondButton()">Option two</button>
-            </div>
-            <div class="row">
-                <button type="button" class="btn btn-outline-secondary btn-block opt-three  col-md-6"
-                    onclick="thirdButton()">Option three</button>
-                <button type="button" class="btn btn-outline-secondary btn-block opt-four  col-md-6"
-                    onclick="fourthButton()">Option four</button>
-            </div>
-        </div>
-    </div>
+    <!--  -->
 
+    <div class="options-container display-options">
+      <div class="flex-container">
+        <button type="button" class="button btn-block opt-one col-md-6" onclick="firstButton()"></button>
+        <button type="button" class="button btn-block opt-two col-md-6" onclick="secondButton()"></button>
+      </div>
+
+      <div class="flex-container">
+        <button type="button" class="button btn-block opt-three col-md-6" onclick="thirdButton()"></button>
+        <button type="button" class="button btn-outline-dark btn-block opt-four col-md-6"
+          onclick="fourthButton()"></button>
+      </div>
+    </div>
 
     <!-- navigating question -->
 
-    <div class="navigate-question  justify-content-center">
-        <div class="row">
-            <div class="previous-question-btn col-sm-6">
-                <a class="btn btn-large btn-secondary try-again" onclick="previousQuestion()" href="#"><i
-                        class="fa-solid fa-circle-chevron-left previous-question"></i>Previous</a>
-            </div>
-            <div class="next-question-btn col-sm-6" >
-                <a class="btn btn-large btn-secondary next-level" onclick="nextQuestion()" href="#">Next<i
-                        class="fa-solid fa-circle-chevron-right next-question"></i></a>
-            </div>
-
+    <div class="navigate-question justify-content-center">
+      <div class="row">
+        <div class="previous-question-btn col-sm-6">
+          <a class="btn btn-large btn-dark try-again" onclick="previousQuestion()" href="#"><i
+              class="fa-solid fa-circle-chevron-left previous-question"></i>Previous</a>
         </div>
+
+        <div class="next-question-btn col-sm-6">
+          <a class="btn btn-large btn-dark next-level" onclick="nextQuestion()" href="#">Next<i
+              class="fa-solid fa-circle-chevron-right next-question"></i></a>
+        </div>
+      </div>
     </div>
 
     <!-- using pagination to navigate question -->
     <div class="bottom custom-pagination-class">
-        <ul class="pagination pagination-md justify-content-center" style="margin:0; ">
+      <ul class="pagination pagination-md justify-content-center" style="margin: 0">
+        <li class="page-item" onclick="questionOnePage()">
+          <a class="page-links questionOnePage" href="#">1</a>
+        </li>
 
-            <li class="page-item " onclick="questionOnePage()"><a class="page-link  questionOnePage" href="#">1</a></li>
+        <li class="page-item" onclick="questionTwoPage()">
+          <a class="page-links questionTwoPage" href="#">2</a>
+        </li>
 
-            <li class="page-item " onclick="questionTwoPage()"><a class="page-link questionTwoPage" href="#">2</a></li>
+        <li class="page-item" onclick="questionThreePage()">
+          <a class="page-links questionThreePage" href="#">3</a>
+        </li>
 
-            <li class="page-item " onclick="questionThreePage()"><a class="page-link  questionThreePage" href="#">3</a>
-            </li>
+        <li class="page-item" onclick="questionFourPage()">
+          <a class="page-links questionFourPage" href="#">4</a>
+        </li>
 
-            <li class="page-item " onclick="questionFourPage()"><a class="page-link  questionFourPage" href="#">4</a>
-            </li>
+        <li class="page-item">
+          <a class="page-links" onclick="questionFivePage()" href="#">5</a>
+        </li>
 
-            <li class="page-item"><a class="page-link " onclick="questionFivePage()" href="#">5</a></li>
+        <li class="page-item">
+          <a class="page-links" onclick="questionSixPage()" href="#">6</a>
+        </li>
 
-            <li class="page-item"><a class="page-link " onclick="questionSixPage()" href="#">6</a></li>
+        <li class="page-item">
+          <a class="page-links" onclick="questionSevenPage()" href="#">7</a>
+        </li>
 
-            <li class="page-item"><a class="page-link " onclick="questionSevenPage()" href="#">7</a></li>
+        <li class="page-item">
+          <a class="page-links" onclick="questionEightPage()" href="#">8</a>
+        </li>
 
-            <li class="page-item"><a class="page-link " onclick="questionEightPage()" href="#">8</a></li>
+        <li class="page-item">
+          <a class="page-links" onclick="questionNinePage()" href="#">9</a>
+        </li>
 
-            <li class="page-item"><a class="page-link " onclick="questionNinePage()" href="#">9</a></li>
-
-            <li class="page-item"><a class="page-link " onclick="questionTenPage()" href="#">10</a></li>
-
-        </ul>
-
-
+        <li class="page-item">
+          <a class="page-links" onclick="questionTenPage()" href="#">10</a>
+        </li>
+      </ul>
     </div>
 
-
-
-
-
     <!-- scripts -->
+    <script type="text/javascript">
+      (function () {
+        "use strict";
+        document
+          .querySelector('[data-toggle="offcanvas"]')
+          .addEventListener("click", function () {
+            document.querySelector(".offcanvas-collapse").classList.toggle("open");
+          });
+      })();
+    </script>
 
-    <script
-        src="C:\Users\Nelson\Documents\Web development\Udemy Project\bootstrap-5.2.0\bootstrap-5.2.0\dist\js\bootstrap.min.js"></script>
+    <script>
+      var hamburger = document.querySelector(".hamburger");
+      var navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+    </script>
+
+    <script src="bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-        crossorigin="anonymous"></script>
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"></script>
 
-    <script src="index.js"></script>
-</body>
+    <script src="js/index.js"></script>
+  </body>
 
 </html>

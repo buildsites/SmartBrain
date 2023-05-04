@@ -1,0 +1,87 @@
+.body {
+  background-color: #e9c601;
+}
+
+/* navigation menu*/
+.bar {
+  background: #c5c6d0;
+}
+
+.brand,
+.lists,
+.close-offcanvas {
+  color: white;
+}
+
+/* navigation menu ends here */
+
+.themecolor {
+  border: 2px solid black;
+  box-shadow: 0 0 5px 3px #dddcdc;
+}
+
+.themecolor:hover {
+  border: 2px dotted black;
+}
+
+.dark {
+  background-color: black;
+}
+
+.dark:hover {
+  border: 2px dotted white;
+}
+
+.light {
+  background-color: white;
+}
+
+.neon {
+  background-color: #ffe330;
+}
+
+/* question section */
+.count {
+  color: black;
+}
+
+.display-question,
+.display-options {
+  background-color: #fcdb20;
+  box-shadow: 0 0 7px 3px rgb(221, 220, 220);
+}
+
+.question-count {
+  color: black;
+}
+
+.question-container {
+  color: black;
+}
+
+.button {
+  border: 1px solid black;
+  color: black;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.page-links {
+  color: white;
+  background-color: #212529;
+  border: 1px solid;
+}
+
+.page-links:hover {
+  color: #212529;
+  background-color: goldenrod;
+  border-color: white;
+}
+.page-links:focus {
+  color: #212529;
+  background-color: goldenrod;
+  border-color: white;
+}
