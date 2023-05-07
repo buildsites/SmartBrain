@@ -46,7 +46,7 @@
 
 /* question section */
 .count {
-  color: black;
+  color: #333333;
 }
 
 .display-question,
@@ -56,11 +56,11 @@
 }
 
 .question-count {
-  color: black;
+  color: #333333;
 }
 
 .question-container {
-  color: black;
+  color: #333333;
 }
 
 .button {
@@ -69,7 +69,7 @@
 
 .button:hover {
   background-color: #212529;
-  color: white;
+  color: #f8f8f8;
 }
 
 .question-count {

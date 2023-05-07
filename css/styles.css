@@ -151,12 +151,12 @@
   left: 15px;
   font-weight: bolder;
   font-size: 20px;
-  color: black;
+  color: #333333;
 }
 
 .question-container {
   text-align: center;
-  color: black;
+  color: #333333;
   padding: 70px;
 }
 

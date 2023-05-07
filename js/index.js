@@ -209,7 +209,7 @@ function questionNine() {
       "A is the brother of B, B is the brother of C. C is the Father of D. So how is D related to A?";
 
     document.querySelector(".opt-one").textContent = "A is D's Nephew";
-    document.querySelector(".opt-two").textContent = "A is D;s second cousin";
+    document.querySelector(".opt-two").textContent = "A is D's second cousin";
     document.querySelector(".opt-three").textContent = "A is D's uncle";
     document.querySelector(".opt-four").textContent = "A is D's brother in-law";
 
